@@ -7,6 +7,80 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content padding fullscreen>
+  <ion-grid fixed>
+    <!-- FILA 1 -->
+    <ion-row>
+      <ion-col>
+        <!-- <ion-button color="dark"><span id="result">0</span></ion-button> -->
+        <ion-button expand="block" color="dark">0</ion-button>
+      </ion-col>
+    </ion-row>
+    <!-- FILA 2 -->
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" color="danger" onclick="del()">AC</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" color="tertiary" onclick="add('+')">+</ion-button>
+      </ion-col>
+    </ion-row>
+    <!-- FILA 3 -->
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" color="primary" onclick="add('1')">1</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" color="primary" onclick="add('2')">2</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" color="primary" onclick="add('3')">3</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" color="tertiary" onclick="add('-')">-</ion-button>
+      </ion-col>
+    </ion-row>
+    <!-- FILA 4 -->
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" color="primary" onclick="add('4')">4</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" color="primary" onclick="add('5')">5</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" color="primary" onclick="add('6')">6</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" color="tertiary" onclick="add('X')">X</ion-button>
+      </ion-col>
+    </ion-row>
+    <!-- FILA 5 -->
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" color="primary" onclick="add('7')">7</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" color="primary" onclick="add('8')">8</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" color="primary" onclick="add('9')">9</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" color="tertiary" onclick="add('/')">/</ion-button>
+      </ion-col>
+    </ion-row>
+    <!-- FILA 6 -->
+    <ion-row>
+      <ion-col size="6">
+        <ion-button expand="block" color="primary" onclick="add('0')">0</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" color="primary" onclick="add('.')">.</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" color="tertiary" onclick="add('=')">=</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
