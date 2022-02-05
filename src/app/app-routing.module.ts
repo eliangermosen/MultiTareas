@@ -25,7 +25,21 @@ const routes: Routes = [
   },
   {
     path: 'multiplicador',
-    loadChildren: () => import('./multiplicador/multiplicador.module').then( m => m.MultiplicadorPageModule)
+    // loadChildren: () => import('./multiplicador/multiplicador.module').then( m => m.MultiplicadorPageModule)
+    children:[
+      {
+        path: '',
+        loadChildren: () => import('./multiplicador/multiplicador.module').then( m => m.MultiplicadorPageModule)
+      },
+      {
+        path: ':multiplicadoNum',
+        loadChildren: () => import('./multiplicador/tabla/tabla.module').then( m => m.TablaPageModule)
+      }
+    ]
+  },
+  {
+    path: 'video',
+    loadChildren: () => import('./video/video.module').then( m => m.VideoPageModule)
   }
 ];
 

@@ -10,6 +10,7 @@ export class AppComponent {
     { title: 'Sumadora', url: '/sumadora', icon: 'calculator' },
     { title: 'Traductor ', url: '/traductor', icon: 'language' },
     { title: 'Multiplicador', url: '/multiplicador', icon: 'calculator' },
+    { title: 'Video', url: '/video', icon: 'videocam' },
     // { title: 'Multiplicador', url: '/folder/Multiplicador', icon: 'calculator' },
   ];
   // public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];

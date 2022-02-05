@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: MultiplicadorPage
+  },
+  {
+    path: 'tabla',
+    loadChildren: () => import('./tabla/tabla.module').then( m => m.TablaPageModule)
   }
 ];
 
