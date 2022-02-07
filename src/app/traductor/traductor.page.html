@@ -56,10 +56,11 @@
   <ion-list>
     <ion-item>
       <ion-label position="stacked">Numero</ion-label>
-      <ion-input placeholder="Ingrese el numero a convertir" type="number"></ion-input>
+      <ion-input placeholder="Ingrese el numero a convertir" type="number" class="numero" name="numero" id="numeroP">
+      </ion-input>
     </ion-item>
     <ion-fab horizontal="end" vertical="center" slot="fixed">
-      <ion-fab-button color="primary">
+      <ion-fab-button color="primary" class="btn-convertir" (click)="probando(numero)">
         <ion-icon name="arrow-forward-circle-outline"></ion-icon>
       </ion-fab-button>
     </ion-fab>
@@ -67,7 +68,7 @@
   <ion-list>
     <ion-item>
       <ion-label position="stacked">Letras</ion-label>
-      <ion-input type="number"></ion-input>
+      <ion-input type="number" class="resultado" id="result"></ion-input>
     </ion-item>
   </ion-list>
 </ion-content>

@@ -11,10 +11,10 @@
   <ion-list>
     <ion-item>
       <ion-label position="stacked">Multiplicar</ion-label>
-      <ion-input placeholder="Ingrese el numero a multiplicar" type="number"></ion-input>
+      <ion-input placeholder="Ingrese el numero a multiplicar" type="number" [(ngModel)]="multiplicado"></ion-input>
     </ion-item>
     <ion-fab horizontal="end" vertical="center" slot="fixed">
-      <ion-fab-button color="primary" [routerLink]="['/multiplicador', 1]">
+      <ion-fab-button color="primary" (click)="clicando()">
         <!-- <ion-icon name="calculator-outline"></ion-icon> -->
         <ion-icon name="arrow-forward-circle-outline"></ion-icon>
       </ion-fab-button>

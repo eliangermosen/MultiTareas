@@ -25,17 +25,21 @@ const routes: Routes = [
   },
   {
     path: 'multiplicador',
-    // loadChildren: () => import('./multiplicador/multiplicador.module').then( m => m.MultiplicadorPageModule)
-    children:[
-      {
-        path: '',
-        loadChildren: () => import('./multiplicador/multiplicador.module').then( m => m.MultiplicadorPageModule)
-      },
-      {
-        path: ':multiplicadoNum',
-        loadChildren: () => import('./multiplicador/tabla/tabla.module').then( m => m.TablaPageModule)
-      }
-    ]
+    loadChildren: () => import('./multiplicador/multiplicador.module').then( m => m.MultiplicadorPageModule)
+    // children:[
+    //   {
+    //     path: '',
+    //     loadChildren: () => import('./multiplicador/multiplicador.module').then( m => m.MultiplicadorPageModule)
+    //   },
+    //   {
+    //     path: ':multiplicadoNum',
+    //     loadChildren: () => import('./multiplicador/tabla/tabla.module').then( m => m.TablaPageModule)
+    //   }
+    // ]
+  },
+  {
+    path: 'tabla/:numero',
+    loadChildren: () => import('./multiplicador/tabla/tabla.module').then( m => m.TablaPageModule)
   },
   {
     path: 'video',

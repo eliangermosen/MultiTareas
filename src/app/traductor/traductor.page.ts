@@ -12,4 +12,10 @@ export class TraductorPage implements OnInit {
   ngOnInit() {
   }
 
+  probando(){
+    console.log('numero');
+    const inputEnt = document.getElementById('numeroP')[0].value;
+    document.getElementById('result').innerHTML = inputEnt;
+  }
+
 }
