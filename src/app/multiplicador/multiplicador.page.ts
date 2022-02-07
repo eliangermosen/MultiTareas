@@ -26,6 +26,7 @@ export class MultiplicadorPage implements OnInit {
       console.log(this.multiplicado, 'else');
       // this.router.navigate(['multiplicador',this.multiplicado]);
       this.router.navigate(['/tabla',this.multiplicado]);
+      this.multiplicado = undefined;
     }
   }
 
