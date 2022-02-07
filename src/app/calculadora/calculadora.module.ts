@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SumadoraPageRoutingModule } from './sumadora-routing.module';
+import { CalculadoraPageRoutingModule } from './calculadora-routing.module';
 
-import { SumadoraPage } from './sumadora.page';
+import { CalculadoraPage } from './calculadora.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SumadoraPageRoutingModule
+    CalculadoraPageRoutingModule
   ],
-  declarations: [SumadoraPage]
+  declarations: [CalculadoraPage]
 })
-export class SumadoraPageModule {}
+export class CalculadoraPageModule {}
