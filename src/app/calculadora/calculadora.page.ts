@@ -35,6 +35,9 @@ export class CalculadoraPage implements OnInit {
         this.pantalla+=tecla;
       }
     }
+    else if(tecla === '.'){
+      this.pantalla+=tecla;
+    }
     else if(tecla === '='){
       if(this.ultimoOperador==='+'){
         console.log('suma');

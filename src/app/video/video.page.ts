@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-video',
@@ -8,9 +8,12 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class VideoPage implements OnInit {
 
-  constructor() { }
+  videoUrl = 'https://www.youtube.com/embed/gALH3SXwnVk';
+  urlConfiable: SafeUrl;
+  constructor(public sanitizer: DomSanitizer) { }
 
   ngOnInit() {
+    this.urlConfiable = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/gALH3SXwnVk');
   }
 
 }

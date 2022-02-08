@@ -12,14 +12,12 @@
     <!-- FILA 1 -->
     <ion-row>
       <ion-col>
-        <!-- <ion-button color="dark"><span id="result">0</span></ion-button> -->
-        <ion-button expand="block" color="dark">{{pantalla}}</ion-button>
+        <ion-button expand="block" color="dark" class="pantalla">{{pantalla}}</ion-button>
       </ion-col>
     </ion-row>
     <!-- FILA 2 -->
     <ion-row>
       <ion-col>
-        <!-- <ion-button expand="block" color="danger" (click)="del()">AC</ion-button> -->
         <ion-button expand="block" color="danger" (click)="del()">{{teclas[14]}}</ion-button>
       </ion-col>
       <ion-col>
@@ -29,72 +27,57 @@
     <!-- FILA 3 -->
     <ion-row>
       <ion-col>
-        <!-- <ion-button expand="block" color="primary" (click)="agregar('1')">1</ion-button> -->
         <ion-button expand="block" color="primary" (click)="presionarTecla(teclas[1])">{{teclas[1]}}</ion-button>
       </ion-col>
       <ion-col>
-        <!-- <ion-button expand="block" color="primary" (click)="agregar('2')">2</ion-button> -->
         <ion-button expand="block" color="primary" (click)="presionarTecla(teclas[2])">{{teclas[2]}}</ion-button>
       </ion-col>
       <ion-col>
-        <!-- <ion-button expand="block" color="primary" (click)="agregar('3')">3</ion-button> -->
         <ion-button expand="block" color="primary" (click)="presionarTecla(teclas[3])">{{teclas[3]}}</ion-button>
       </ion-col>
       <ion-col>
-        <!-- <ion-button expand="block" color="tertiary" (click)="resta()">-</ion-button> -->
         <ion-button expand="block" color="tertiary" (click)="presionarTecla(teclas[11])">{{teclas[11]}}</ion-button>
       </ion-col>
     </ion-row>
     <!-- FILA 4 -->
     <ion-row>
       <ion-col>
-        <!-- <ion-button expand="block" color="primary" (click)="agregar('4')">4</ion-button> -->
         <ion-button expand="block" color="primary" (click)="presionarTecla(teclas[4])">{{teclas[4]}}</ion-button>
       </ion-col>
       <ion-col>
-        <!-- <ion-button expand="block" color="primary" (click)="agregar('5')">5</ion-button> -->
         <ion-button expand="block" color="primary" (click)="presionarTecla(teclas[5])">{{teclas[5]}}</ion-button>
       </ion-col>
       <ion-col>
-        <!-- <ion-button expand="block" color="primary" (click)="agregar('6')">6</ion-button> -->
         <ion-button expand="block" color="primary" (click)="presionarTecla(teclas[6])">{{teclas[6]}}</ion-button>
       </ion-col>
       <ion-col>
-        <!-- <ion-button expand="block" color="tertiary" (click)="multiplicacion()">X</ion-button> -->
         <ion-button expand="block" color="tertiary" (click)="presionarTecla(teclas[12])">{{teclas[12]}}</ion-button>
       </ion-col>
     </ion-row>
     <!-- FILA 5 -->
     <ion-row>
       <ion-col>
-        <!-- <ion-button expand="block" color="primary" (click)="agregar('7')">7</ion-button> -->
         <ion-button expand="block" color="primary" (click)="presionarTecla(teclas[7])">{{teclas[7]}}</ion-button>
       </ion-col>
       <ion-col>
-        <!-- <ion-button expand="block" color="primary" (click)="agregar('8')">8</ion-button> -->
         <ion-button expand="block" color="primary" (click)="presionarTecla(teclas[8])">{{teclas[8]}}</ion-button>
       </ion-col>
       <ion-col>
-        <!-- <ion-button expand="block" color="primary" (click)="agregar('9')">9</ion-button> -->
         <ion-button expand="block" color="primary" (click)="presionarTecla(teclas[9])">{{teclas[9]}}</ion-button>
       </ion-col>
       <ion-col>
-        <!-- <ion-button expand="block" color="tertiary" (click)="division()">/</ion-button> -->
         <ion-button expand="block" color="tertiary" (click)="presionarTecla(teclas[13])">{{teclas[13]}}</ion-button>
       </ion-col>
     </ion-row>
     <!-- FILA 6 -->
     <ion-row>
       <ion-col size="6">
-        <!-- <ion-button expand="block" color="primary" (click)="agregar('0')">0</ion-button> -->
         <ion-button expand="block" color="primary" (click)="presionarTecla(teclas[0])">{{teclas[0]}}</ion-button>
       </ion-col>
       <ion-col>
-        <!-- <ion-button expand="block" color="primary" (click)="agregar('.')">.</ion-button> -->
         <ion-button expand="block" color="primary" (click)="presionarTecla(teclas[16])">{{teclas[16]}}</ion-button>
       </ion-col>
       <ion-col>
-        <!-- <ion-button expand="block" color="tertiary" (click)="igual()">=</ion-button> -->
         <ion-button expand="block" color="tertiary" (click)="presionarTecla(teclas[15])">{{teclas[15]}}</ion-button>
       </ion-col>
     </ion-row>
