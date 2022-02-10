@@ -8,7 +8,7 @@ import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browse
 })
 export class VideoPage implements OnInit {
 
-  videoUrl = 'https://www.youtube.com/embed/gALH3SXwnVk';
+  videoUrl = 'https://www.youtube.com/embed/uJoXSSNz71Y';
   urlConfiable: SafeUrl;
   ////sanitizer.bypassSecurityTrustResourceUrl(detalle.trailer.trailler.link)
   constructor(public sanitizer: DomSanitizer) { }

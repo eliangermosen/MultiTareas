@@ -1,5 +1,7 @@
 {
   "name": "multi-tarea",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
