@@ -41,19 +41,19 @@ export class CalculadoraPage implements OnInit {
     else if(tecla === '='){
       if(this.ultimoOperador==='+'){
         console.log('suma');
-        this.pantalla= ''+ (parseInt(this.pantalla) + parseInt(this.anteriorValor));
+        this.pantalla= ''+ (Number(this.pantalla) + Number(this.anteriorValor));
       }
       if(this.ultimoOperador==='-'){
         console.log('resta');
-        this.pantalla= ''+ (parseInt(this.anteriorValor) - parseInt(this.pantalla));
+        this.pantalla= ''+ (Number(this.anteriorValor) - Number(this.pantalla));
       }
       if(this.ultimoOperador==='X'){
         console.log('multiplica');
-        this.pantalla= ''+ (parseInt(this.pantalla) * parseInt(this.anteriorValor));
+        this.pantalla= ''+ (Number(this.pantalla) * Number(this.anteriorValor));
       }
       if(this.ultimoOperador==='/'){
         console.log('divide');
-        this.pantalla= ''+ (parseInt(this.anteriorValor) / parseInt(this.pantalla));
+        this.pantalla= ''+ (Number(this.anteriorValor) / Number(this.pantalla));
       }
     }
     else{

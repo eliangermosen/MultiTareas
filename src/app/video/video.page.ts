@@ -10,10 +10,11 @@ export class VideoPage implements OnInit {
 
   videoUrl = 'https://www.youtube.com/embed/gALH3SXwnVk';
   urlConfiable: SafeUrl;
+  ////sanitizer.bypassSecurityTrustResourceUrl(detalle.trailer.trailler.link)
   constructor(public sanitizer: DomSanitizer) { }
 
   ngOnInit() {
-    this.urlConfiable = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/gALH3SXwnVk');
+    this.urlConfiable = this.sanitizer.bypassSecurityTrustResourceUrl(this.videoUrl);
   }
 
 }
